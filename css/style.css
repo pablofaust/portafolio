@@ -1,0 +1,314 @@
+@import 'bootstrap' ;
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+/* Parte de CSS que se aplica a toda la página */
+
+body {
+	overflow-x: hidden; /* Para no ver lo que sale de los limites de la pantalla */
+}
+
+h1 {
+	font-size: 24px
+}
+
+h2 {
+	font-size: 22px;
+}
+
+h1, h2 {
+
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-family: 'Roboto', Verdana, sans-serif;
+}
+
+/* MENU DE ARRIBA */
+
+.menu {
+	height: 13em;
+	border-bottom: dashed 1px #BFBFBF;
+	z-index: 20;
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+}
+
+.menu-2 {
+	height: 13em;
+	border-bottom: dashed 1px #BFBFBF;
+	z-index: 20;
+	position: relative; /*Para que el menu de la parte portafolio deje más espacio a las imágenes*/
+	width: 100%;
+	background-color: #fff;
+}
+
+/* La foto */
+
+.profile {
+	position: relative;
+  	height: 130px;
+  	margin: 25px 0px 0px 30px;
+  	display: inline-block;
+}
+
+/* El nombre */
+
+.name {
+	display: inline-block;
+	line-height: 0.7;
+	vertical-align: middle;
+	margin-left: 20px;
+	color: #BFBFBF;
+}
+
+.name h1 {
+	font-weight: 400;
+}
+
+.name h2 {
+	font-weight: 300;
+}
+
+/* Los links */
+
+.links {
+	margin-top: 65px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.links li {
+	display: inline-block;
+	margin-left: 5em;
+}
+
+.links li a {
+	color: #BFBFBF;
+}
+
+/* PÁGINA PRINCIPAL */
+
+/* SLIDER */
+
+.slider {
+	height: 31em;
+	top: 13em;
+	position: relative;
+}
+
+.slider .col-md-12 {
+	padding: 0 0 0 0;
+} 
+
+/* Flechas */
+
+.chevrons {
+	margin-top: 150px; /* Altura del menu + Mitad de la altura del slider - Altura de las flechas */
+	position: absolute;
+	z-index: 10;
+	color: #BFBFBF;
+	width: 100%;
+}
+
+.chevron-left {
+	left: 5%;
+	position: absolute;
+	font-size: 80px;
+}
+
+.chevron-right {
+	right: 5%;
+	position: absolute;
+	font-size: 80px;
+}
+
+/* Slide */
+
+.slide {
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	display: none;
+	text-align: center;
+	vertical-align: middle;
+	height: 31em;
+}
+
+.slide img {
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.button {
+	position: absolute;
+	z-index: 6;
+	color: rgba(0, 0, 0, 0.84);
+	width: 100%;
+	text-align: center;
+	margin: auto;
+	margin-top: 25em;	
+}
+
+.button a {
+	color: #BFBFBF;
+}
+/* DESCRIPCIÓN */
+
+.description {
+	position: relative;
+	height: 28.1em;
+	top: 13em;
+	padding: inherit;
+}
+
+.description .row {
+	width: 100%;
+}
+
+.categories {
+	background-color: #fff;
+	height: 22em;
+	top: 2em;
+	padding: 0;
+}
+
+.category {
+	height: 100%;
+	border: dashed 1px #BFBFBF;
+}
+
+.category-1, .category-2, .category-3 {
+	margin-top: 1em;
+	color: #BFBFBF;
+}
+
+.line {
+	border: dashed 1px #BFBFBF;
+  	margin-top: 1.2em;
+}
+
+/* FOOTER */
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  top: 13em;
+  height: 3em;
+  border-top: dashed 1px #BFBFBF;
+  padding-top: 1em;
+ }
+
+ .footer p {
+ 	text-align: right;
+ 	color: #BFBFBF;
+ }
+
+ .footer a {
+ 	color: #929292;
+ }
+
+ /* LINK 1 */
+
+ .portfolio {
+ 	position: relative;
+ 	width: 100%;
+ 	height: 31em;
+ 	text-align: center;
+ 	padding-top: 2em;
+ }
+
+ .portfolio img {
+ 	border: dashed 1px #BFBFBF;
+ }
+
+ .portfolio .row {
+ 	margin-bottom: 2em;
+ }
+
+ .charge-more {
+	color: #BFBFBF;
+ }
+
+ .charge-more a {
+ 	color: #929292;
+ }
+
+ /* LINK 2 */
+
+/* SLIDER */
+
+.slider-2 {
+	height: 31em;
+	position: relative;
+}
+
+.slider-2 .col-md-12 {
+	padding: 0 0 0 0;
+} 
+
+/* TÍTULO */
+
+ .title {
+	position: relative;
+	height: 9em;
+	padding: inherit;
+	border-bottom: dashed 1px #BFBFBF;
+}
+
+.title .row {
+	width: 100%;
+}
+
+.project {
+	border-bottom: dashed 1px #BFBFBF;
+	color: #BFBFBF;
+}
+
+.project-subtitle {
+	color: #BFBFBF;
+}
+
+/* PRESENTACIÓN */
+
+ .presentation {
+	position: relative;
+	height: 31em;
+	padding: inherit;
+}
+
+.presentation .row {
+	margin-top: 5em;
+}
+
+/* FOOTER */
+
+.footer-2 {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  height: 3em;
+  border-top: dashed 1px #BFBFBF;
+  padding-top: 1em;
+ }
+
+ .footer-2 p {
+ 	text-align: right;
+ 	color: #BFBFBF;
+ }
+
+ .footer-2 a {
+ 	color: #929292;
+ }
